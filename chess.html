@@ -5,116 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess Board</title>
-    <style>
-        .square {
-            height: 60px;
-            width: 60px;
-            text-align: center;
-            font-size:50px;
-        }
-        .square-sm {
-            font-size:20px;
-        }
-        .light {
-            background-color: lightgray;
-        }
-        .dark {
-            background-color: darkgray;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <a href="hobbies.html">&larr; Back</a>
     <h3>Chess Board Example</h3>
 
-    <table>
+    <table class="board">
         <tr name="8">
             <td class="square square-sm">8</td>
-            <td class="light square" name="a8">&#9820;</td> <!-- Black Rook -->
-            <td class="dark square" name="b8">&#9822;</td> <!-- Black Knight -->
-            <td class="light square" name="c8">&#9821;</td> <!-- Black Bishop -->
-            <td class="dark square" name="d8">&#9819;</td> <!-- Black Queen -->
-            <td class="light square" name="e8">&#9818;</td> <!-- Black King -->
-            <td class="dark square" name="f8">&#9821;</td> <!-- Black Bishop -->
-            <td class="light square" name="g8">&#9822;</td> <!-- Black Knight -->
-            <td class="dark square" name="h8">&#9820;</td> <!-- Black Rook -->
+            <td class="square square-light square-top square-lft" name="a8">&#9820;</td> <!-- Black Rook -->
+            <td class="square square-dark square-top" name="b8">&#9822;</td> <!-- Black Knight -->
+            <td class="square square-light square-top" name="c8">&#9821;</td> <!-- Black Bishop -->
+            <td class="square square-dark square-top" name="d8">&#9819;</td> <!-- Black Queen -->
+            <td class="square square-light square-top" name="e8">&#9818;</td> <!-- Black King -->
+            <td class="square square-dark square-top" name="f8">&#9821;</td> <!-- Black Bishop -->
+            <td class="square square-light square-top" name="g8">&#9822;</td> <!-- Black Knight -->
+            <td class="square square-dark square-top square-rgt" name="h8">&#9820;</td> <!-- Black Rook -->
         </tr>
         <tr name="7">
             <td class="square square-sm">7</td>
-            <td class="dark square" name="a7">&#9823;</td> <!-- Black Pawn -->
-            <td class="light square" name="b7">&#9823;</td> <!-- Black Pawn -->
-            <td class="dark square" name="c7">&#9823;</td> <!-- Black Pawn -->
-            <td class="light square" name="d7">&#9823;</td> <!-- Black Pawn -->
-            <td class="dark square" name="e7">&#9823;</td> <!-- Black Pawn -->
-            <td class="light square" name="f7">&#9823;</td> <!-- Black Pawn -->
-            <td class="dark square" name="g7">&#9823;</td> <!-- Black Pawn -->
-            <td class="light square" name="h7">&#9823;</td> <!-- Black Pawn -->
+            <td class="square square-dark square-lft" name="a7">&#9823;</td> <!-- Black Pawn -->
+            <td class="square square-light" name="b7">&#9823;</td> <!-- Black Pawn -->
+            <td class="square square-dark" name="c7">&#9823;</td> <!-- Black Pawn -->
+            <td class="square square-light" name="d7">&#9823;</td> <!-- Black Pawn -->
+            <td class="square square-dark" name="e7">&#9823;</td> <!-- Black Pawn -->
+            <td class="square square-light" name="f7">&#9823;</td> <!-- Black Pawn -->
+            <td class="square square-dark" name="g7">&#9823;</td> <!-- Black Pawn -->
+            <td class="square square-light square-rgt" name="h7">&#9823;</td> <!-- Black Pawn -->
         </tr>
         <tr name="6">
             <td class="square square-sm">6</td>
-            <td class="light square" name="a6">&nbsp;</td>
-            <td class="dark square" name="b6">&nbsp;</td>
-            <td class="light square" name="c6">&nbsp;</td>
-            <td class="dark square" name="d6">&nbsp;</td>
-            <td class="light square" name="e6">&nbsp;</td>
-            <td class="dark square" name="f6">&nbsp;</td>
-            <td class="light square" name="g6">&nbsp;</td>
-            <td class="dark square" name="h6">&nbsp;</td>
+            <td class="square square-light square-lft" name="a6"></td>
+            <td class="square square-dark" name="b6"></td>
+            <td class="square square-light" name="c6"></td>
+            <td class="square square-dark" name="d6"></td>
+            <td class="square square-light" name="e6"></td>
+            <td class="square square-dark" name="f6"></td>
+            <td class="square square-light" name="g6"></td>
+            <td class="square square-dark square-rgt" name="h6"></td>
         </tr>
         <tr name="5">
             <td class="square square-sm">5</td>
-            <td class="dark square" name="a5">&nbsp;</td>
-            <td class="light square" name="b5">&nbsp;</td>
-            <td class="dark square" name="c5">&nbsp;</td>
-            <td class="light square" name="d5">&nbsp;</td>
-            <td class="dark square" name="e5">&nbsp;</td>
-            <td class="light square" name="f5">&nbsp;</td>
-            <td class="dark square" name="g5">&nbsp;</td>
-            <td class="light square" name="h5">&nbsp;</td>
+            <td class="square square-dark square-lft" name="a5"></td>
+            <td class="square square-light" name="b5"></td>
+            <td class="square square-dark" name="c5"></td>
+            <td class="square square-light" name="d5"></td>
+            <td class="square square-dark" name="e5"></td>
+            <td class="square square-light" name="f5"></td>
+            <td class="square square-dark" name="g5"></td>
+            <td class="square square-light square-rgt" name="h5"></td>
         </tr>
         <tr name="4">
             <td class="square square-sm">4</td>
-            <td class="light square" name="a4">&nbsp;</td>
-            <td class="dark square" name="b4">&nbsp;</td>
-            <td class="light square" name="c4">&nbsp;</td>
-            <td class="dark square" name="d4">&nbsp;</td>
-            <td class="light square" name="e4">&nbsp;</td>
-            <td class="dark square" name="f4">&nbsp;</td>
-            <td class="light square" name="g4">&nbsp;</td>
-            <td class="dark square" name="h4">&nbsp;</td>
+            <td class="square square-light square-lft" name="a4"></td>
+            <td class="square square-dark" name="b4"></td>
+            <td class="square square-light" name="c4"></td>
+            <td class="square square-dark" name="d4"></td>
+            <td class="square square-light" name="e4">&#9817;</td>
+            <td class="square square-dark" name="f4"></td>
+            <td class="square square-light" name="g4"></td>
+            <td class="square square-dark square-rgt" name="h4"></td>
         </tr>
         <tr name="3">
             <td class="square square-sm">3</td>
-            <td class="dark square" name="a3">&nbsp;</td>
-            <td class="light square" name="b3">&nbsp;</td>
-            <td class="dark square" name="c3">&nbsp;</td>
-            <td class="light square" name="d3">&nbsp;</td>
-            <td class="dark square" name="e3">&nbsp;</td>
-            <td class="light square" name="f3">&nbsp;</td>
-            <td class="dark square" name="g3">&nbsp;</td>
-            <td class="light square" name="h3">&nbsp;</td>
+            <td class="square square-dark square-lft" name="a3"></td>
+            <td class="square square-light" name="b3"></td>
+            <td class="square square-dark" name="c3"></td>
+            <td class="square square-light" name="d3"></td>
+            <td class="square square-dark" name="e3"></td>
+            <td class="square square-light" name="f3"></td>
+            <td class="square square-dark" name="g3"></td>
+            <td class="square square-light square-rgt" name="h3"></td>
         </tr>
         <tr name="2">
             <td class="square square-sm">2</td>
-            <td class="light square" name="a2">&#9817;</td> <!-- White Pawn -->
-            <td class="dark square" name="b2">&#9817;</td> <!-- White Pawn -->
-            <td class="light square" name="c2">&#9817;</td> <!-- White Pawn -->
-            <td class="dark square" name="d2">&#9817;</td> <!-- White Pawn -->
-            <td class="light square" name="e2">&#9817;</td> <!-- White Pawn -->
-            <td class="dark square" name="f2">&#9817;</td> <!-- White Pawn -->
-            <td class="light square" name="g2">&#9817;</td> <!-- White Pawn -->
-            <td class="dark square" name="h2">&#9817;</td> <!-- White Pawn -->
+            <td class="square square-light square-lft" name="a2">&#9817;</td> <!-- White Pawn -->
+            <td class="square square-dark" name="b2">&#9817;</td> <!-- White Pawn -->
+            <td class="square square-light" name="c2">&#9817;</td> <!-- White Pawn -->
+            <td class="square square-dark" name="d2">&#9817;</td> <!-- White Pawn -->
+            <td class="square square-light" name="e2"></td> <!-- White Pawn -->
+            <td class="square square-dark" name="f2">&#9817;</td> <!-- White Pawn -->
+            <td class="square square-light" name="g2">&#9817;</td> <!-- White Pawn -->
+            <td class="square square-dark square-rgt" name="h2">&#9817;</td> <!-- White Pawn -->
         </tr>
         <tr name="1">
             <td class="square square-sm">1</td>
-            <td class="dark square" name="a1">&#9814;</td> <!-- White Rook -->
-            <td class="light square" name="b1">&#9816;</td> <!-- White Knight -->
-            <td class="dark square" name="c1">&#9815;</td> <!-- White Bishop -->
-            <td class="light square" name="d1">&#9812;</td> <!-- White King -->
-            <td class="dark square" name="e1">&#9813;</td> <!-- White Queen -->
-            <td class="light square" name="f1">&#9815;</td> <!-- White Bishop -->
-            <td class="dark square" name="g1">&#9816;</td> <!-- White Knight -->
-            <td class="light square" name="h1">&#9814;</td> <!-- White Rook -->
+            <td class="square square-dark square-btm square-lft" name="a1">&#9814;</td> <!-- White Rook -->
+            <td class="square square-light square-btm" name="b1">&#9816;</td> <!-- White Knight -->
+            <td class="square square-dark square-btm" name="c1">&#9815;</td> <!-- White Bishop -->
+            <td class="square square-light square-btm" name="e1">&#9813;</td> <!-- White Queen -->
+            <td class="square square-dark square-btm" name="d1">&#9812;</td> <!-- White King -->
+            <td class="square square-light square-btm" name="f1">&#9815;</td> <!-- White Bishop -->
+            <td class="square square-dark square-btm" name="g1">&#9816;</td> <!-- White Knight -->
+            <td class="square square-light square-btm square-rgt" name="h1">&#9814;</td> <!-- White Rook -->
         </tr>
         <tr>
             <td class="square square-sm"></td>
