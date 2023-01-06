@@ -1,0 +1,39 @@
+/* Chess */
+.board {
+    border-spacing: 0px;
+}
+
+.square {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.square-sm {
+    font-size: 20px;
+}
+
+.square-top {
+    border-top: thick solid #112D4E;
+}
+
+.square-btm {
+    border-bottom: thick solid #112D4E;
+}
+
+.square-rgt {
+    border-right: thick solid #112D4E;
+}
+
+.square-lft {
+    border-left: thick solid #112D4E;
+}
+
+.square-light {
+    background-color: #DBE2EF;
+}
+
+.square-dark {
+    background-color: #3F72AF;
+}

@@ -15,7 +15,7 @@ https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e
 
 /* Common */
 body {
-    background-color: #F9F7F7;
+    background-color: #DBE2EF;
 }
 
 table {
@@ -34,42 +34,3 @@ h1, h2, h3 {
     color: #112D4E;
 }
 
-/* Chess */
-.board {
-    border-spacing: 0px;
-}
-
-.square {
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    font-size: 50px;
-}
-
-.square-sm {
-    font-size: 20px;
-}
-
-.square-top {
-    border-top: thick solid #112D4E;
-}
-
-.square-btm {
-    border-bottom: thick solid #112D4E;
-}
-
-.square-rgt {
-    border-right: thick solid #112D4E;
-}
-
-.square-lft {
-    border-left: thick solid #112D4E;
-}
-
-.square-light {
-    background-color: #DBE2EF;
-}
-
-.square-dark {
-    background-color: #3F72AF;
-}
