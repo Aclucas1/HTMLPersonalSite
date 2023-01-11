@@ -1,0 +1,158 @@
+/* 
+    Color Palette
+    https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e
+
+    ----------------------------
+    | Color        | Hex       |
+    ----------------------------
+    | dark-blue    | #112D4E   |
+    | blue         | #3F72AF   |
+    | light-blue   | #DBE2EF   |
+    | light        | #F9F7F7   |
+    ----------------------------
+*/
+
+:root {
+    --dark-blue: #112D4E;
+    --blue: #3F72AF;
+    --light-blue: #DBE2EF;
+    --light: #F9F7F7;
+}
+
+/* Common */
+body {
+    background-color: var(--light);
+    margin: 0;
+    text-align: center;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+h1 {
+    margin: 50px auto 0 auto;
+    font-family: 'Indie Flower', cursive;
+    font-size: 6rem;
+    color: var(--dark-blue);
+    line-height: 2;
+}   
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: var(--blue)
+}
+
+a { 
+    color: #3F72AF;
+    font-family: 'Nanum Gothic Coding', monospace;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--light-blue);
+}
+
+p {
+    line-height: 2;
+}
+
+hr {
+    border-color: var(--blue);
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 15px;
+    width: 6%;
+    margin: 100px auto;
+}
+
+
+/* Custom Classes */
+
+.intro {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.top {
+    background-color: var(--light-blue);
+    position: relative;
+    padding-top: 100px;
+}
+
+.middle {
+    background-color: var(--light);
+    padding-top: 100px;
+}
+
+.bottom {
+    background-color: var(--dark-blue);
+    padding: 50px 0 20px;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+.code-img {
+    width: 25%;
+    border-radius: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+.chilli-img {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.contact-me {
+    padding-bottom: 40px;
+}
+
+.contact-msg {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.btn {
+    color: var(--light);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    background: var(--blue);
+}
+
+.btn:hover {
+    background: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+.copyright {
+    color: var(--light-blue);
+    font-size: .75rem;
+    padding: 20px auto;
+}
