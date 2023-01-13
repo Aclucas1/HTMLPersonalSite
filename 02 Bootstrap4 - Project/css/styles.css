@@ -12,21 +12,48 @@ h1 {
     line-height: 1.5;
     font-weight: 900;
 }
-
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
 }
 
-/* Sections */
+.container-fluid {
+    padding: 3% 10% 7%;
+}
+
+/* Title section */
 
 #title {
     background-color: var(--red-color);
 }
 
+.title-img {
+    position:absolute;
+    right:30%;
+    transform: rotate(30deg);
+}
+
+@media (max-width: 1000px) {
+    #title {
+        text-align: center;
+    }
+    .title-img {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+/* features section */
 #features {
+    background-color: white;
     padding: 7% 15%;
+    position: relative;
 }
 
 .feature-box {
@@ -38,14 +65,69 @@ h3 {
     color: var(--orange-color);
 }
 
+
 .feature-box .display-4:hover {
     color: var(--red-color);
 }
 
-.container-fluid {
-    padding: 3% 10%;
+/* testimonials section */
+#testimonials {
+    background-color: var(--red-color);
+    text-align: center;
+    padding: 7% 5%;
+    color: white;
 }
 
+.testimonial-text {
+    padding: 0 15%;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* Press Section */
+#press {
+    background-color: var(--red-color);
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 15px 15px 15px 50px;
+}
+
+/* Pricing */
+
+#pricing {
+    padding: 100px;
+}
+
+/* CTA */
+
+#cta {
+    background-color: var(--red-color);
+    padding: 10% 15%;
+    text-align: center;
+}
+
+#cta h2 {
+    color: white;
+}
+
+/* footer */
+
+#footer {
+    padding: 10%;
+    text-align: center;
+}
+
+#footer i {
+    padding: 0 1.5%;
+}
 /* Nav Bar */
 .navbar {
     padding: 0 0 4.5rem;
@@ -80,12 +162,6 @@ h3 {
 
 /* Images */
 
-.img-rot-25 { transform: rotate(25deg); }
-
-/* Text */
-.text-tindog-red {
-    color: var(--red-color);
-}
 
 
 /* Custom */
