@@ -7,6 +7,8 @@ The Complete 2023 Web Development Bootcamp
 - CSS (Introduction)
 - CSS (Intermediate)
 - Bootstrap 4 (Introduction)
-## WIP Section
 - Bootstrap 4 (Intermediate)
-
+- Javascript (Introduction)
+- Javascript (Intermediate)
+## WIP Section
+- Document Object Model
