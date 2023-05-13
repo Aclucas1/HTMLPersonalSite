@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 const url = 'https://api.openweathermap.org/data/2.5/weather';
-const params = '?units=imperial&appid=4672b3adf07c264212ec0dde7ecc0bf5'
+const params = '?units=imperial&appid={app_id}'
 const atl_lat_lon = 'lat=33.749001&lon=-84.387978'
 
 app.get('/', (req, res) => {
