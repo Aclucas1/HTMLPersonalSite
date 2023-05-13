@@ -1,18 +1,24 @@
 const express = require('express');
-const { readFile } = require('fs');
 const https = require('https');
-const { stringify } = require('querystring');
+const bodyParser = require('body-parser');
 
 
 const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
 const url = 'https://api.openweathermap.org/data/2.5/weather';
-const params = '?lat=33.749001&lon=-84.387978&units=imperial&appid=4672b3adf07c264212ec0dde7ecc0bf5'
-
-
+const params = '?units=imperial&appid=4672b3adf07c264212ec0dde7ecc0bf5'
+const atl_lat_lon = 'lat=33.749001&lon=-84.387978'
 
 app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
 
-    https.get(url + params, (message) => {
+app.post('/', (req, res) => {
+    var city = req.body.city;
+
+    https.get(url + params + '&q=' + city, (message) => {
         message.on('data', (data) => {
             const wd = JSON.parse(data);
             var weather = wd.weather[0]
@@ -30,5 +36,6 @@ app.get('/', (req, res) => {
     });
 });
 
-
 app.listen(3000, () => { console.log('Running on Port 3000!') })
+
+
